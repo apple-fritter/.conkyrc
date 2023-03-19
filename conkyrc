@@ -1,13 +1,3 @@
-#############################################################
-# Conky Configuration, final version.
-# (CopyLeft) 12 February, 2023, apple-fritter
-# Written for Ubuntu 22.04.1.0, Jammy Jellyfish
-#
-# Values for may need to be adjusted for machines with
-# different hardware and software configurations.
-#
-#############################################################
-
 # Window / Display declarations
 own_window yes
 own_window_type desktop
