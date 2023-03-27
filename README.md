@@ -1,3 +1,4 @@
+# .conkyrc
 Conky is a system monitoring tool that generates an output of various information related to your computer's hardware, system processes, and network activity. To use Conky, you will need to create a configuration file (".conkyrc") that contains a set of parameters that determine what information is displayed and how it is displayed.
 
 The Conky display is aligned to the top right corner of the screen and includes graphical elements such as a battery bar, memory bar, and file system bars for root and swap partitions. The display is also transparent and has an opacity value of 145.
