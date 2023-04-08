@@ -27,8 +27,8 @@ The design elements and explanations are as follows:
 - `yes`: Enables double buffering. This makes the window flicker-free.
 
 ### minimum_size, maximum_width
-- `minimum_size 200`: Sets the minimum width and height for the window.
-- `maximum_width 400`: Sets the maximum width for the window.
+- `minimum_size 200`: Sets the minimum width and height for the window to 200 pixels.
+- `maximum_width 400`: Sets the maximum width for the window to 400 pixels.
 
 ### alignment
 - `top_right`: Aligns the window to the top right corner of the desktop.
