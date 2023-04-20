@@ -13,13 +13,19 @@ The file is set to update information every 1 second. Users can modify this inte
 
 The Conky display is aligned to the top right corner of the screen. Users can modify the positioning by changing the values in the "alignment" and "gap_x/gap_y" sections. It includes graphical elements such as a status bars and text based information. 
 
-Font and color choices: The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
+The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
 
-The SYSTEM and Uptime declarations display the system name, kernel version, and uptime, while the Battery declaration displays a battery status bar. The CPU Cores declaration displays a horizontal bar graph for each CPU core, indicating CPU usage.
+Conky is set to display the system name, kernel version, and uptime.
 
-The RAM declaration displays memory usage as a bar graph, and the STORAGE declaration displays storage usage for the root partition and swap partition as bar graphs. The TOP PROCESSES declaration displays the top five processes consuming memory.
+Conky displays a battery status bar.
 
-Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. Users may need to modify these interface names if their system has different interface names. It displays network activity for Ethernet, WiFi, and USB tethering, if available. It includes the upload and download speeds and total upload and download data transfer. The if_existing statements check for the existence of the network interfaces before displaying their status.
+Conky will display a horizontal bar graph for each CPU core, indicating CPU usage.
+
+Conky will display memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs. 
+
+TOP PROCESSES displays the top five processes consuming memory.
+
+Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. &&Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
 
 ## The design elements and explanations are as follows:
 
