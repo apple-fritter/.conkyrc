@@ -73,10 +73,7 @@ The NETWORK declaration displays network activity for Ethernet, WiFi, and USB te
 * Displays the network information for Ethernet, WiFi, and USB tethering (if available) using bar graphs and text.
 
 ## Note
-The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output.
-
----
-This Conky configuration file is designed for personal use and may require modification to work on other systems.
+The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
 
 ## License
 
