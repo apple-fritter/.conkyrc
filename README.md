@@ -25,7 +25,7 @@ Conky will display memory usage as a bar graph, and displays storage usage for t
 
 TOP PROCESSES displays the top five processes consuming memory.
 
-Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. &&Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
+Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
 
 ## The design elements and explanations are as follows:
 
