@@ -1,4 +1,4 @@
-# Conky is a system monitoring tool
+# Conky
 Conky is a system monitoring tool that generates an output of various information related to your computer's hardware, system processes, and network activity. To use Conky, you will need to create a configuration file (".conkyrc") that contains a set of parameters that determine what information is displayed and how it is displayed.
 
 ## Design
@@ -76,3 +76,7 @@ The network section uses variables that are specific to the system. If these var
 
 ---
 This Conky configuration file is designed for personal use and may require modification to work on other systems.
+
+## License
+
+This script is released under the [MIT License](LICENSE).
