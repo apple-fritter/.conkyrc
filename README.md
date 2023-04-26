@@ -4,11 +4,10 @@
 ## .conkyrc
 A Conky configuration file, also known as a `.conkyrc` file, is a text file that controls the appearance and behavior of the Conky system monitoring tool. It contains various settings and parameters that dictate what information should be displayed, where it should be displayed, and how it should be formatted.
 
-The conkyrc file is highly customizable and can be edited to suit individual preferences. It supports a wide range of built-in variables and commands that allow users to display system statistics such as CPU usage, memory usage, disk usage, network traffic, and more. Additionally, users can create their own custom scripts and commands to display additional information or perform specific actions.
-
+The .conkyrc file is highly customizable and can be edited to suit individual preferences. It supports a wide range of built-in variables and commands that allow users to display system statistics such as CPU usage, memory usage, disk usage, network traffic, and more. Additionally, users can create their own custom scripts and commands to display additional information or perform specific actions.
 
 ## Provided .conkyrc file
-This particular conky configuration file is from my daily use machine. It contains all the pertinent information most users will find to suit their needs.
+This particular conky configuration file is from my daily use machine. It contains all the pertinent information most users will find to suit their daily needs.
 
 The file is set to update information every 1 second. Users can modify this interval by changing the value in the "update_interval" section. A shorter interval may increase system resource usage, while a longer interval may not display real-time information.
 
