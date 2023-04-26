@@ -11,7 +11,7 @@ The conkyrc file is highly customizable and can be edited to suit individual pre
 
 The file is set to update information every 1 second. Users can modify this interval by changing the value in the "update_interval" section. A shorter interval may increase system resource usage, while a longer interval may not display real-time information.
 
-The Conky display is aligned to the top right corner of the screen. Users can modify the positioning by changing the values in the "alignment" and "gap_x/gap_y" sections. It includes graphical elements such as a status bars and text based information. 
+The Conky display is aligned to the top right corner of the screen. Users can modify the positioning by changing the values in the `alignment` and `gap_x`/`gap_y` sections. It includes graphical elements such as a status bars and text based information. 
 
 The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
 
