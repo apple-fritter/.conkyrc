@@ -1,27 +1,18 @@
-# Conky
-`Conky` is a system monitoring tool that generates an output of various information related to your computer's hardware, system processes, and network activity.
-
 ## .conkyrc
 A Conky configuration file, also known as a `.conkyrc` file, is a text file that controls the appearance and behavior of the Conky system monitoring tool. It contains various settings and parameters that dictate what information should be displayed, where it should be displayed, and how it should be formatted.
 
 The .conkyrc file is highly customizable and can be edited to suit individual preferences. It supports a wide range of built-in variables and commands that allow users to display system statistics such as CPU usage, memory usage, disk usage, network traffic, and more. Additionally, users can create their own custom scripts and commands to display additional information or perform specific actions.
 
-## Provided .conkyrc file
-This particular conky configuration file is from my daily use machine. It contains all the pertinent information most users will find to suit their daily needs.
+## Example implementation
+I provided my .conkyrc file from my production machine. It contains all the pertinent information most users will find to suit their daily needs.
 
-The file is set to update information every 1 second. Users can modify this interval by changing the value in the `update_interval` section. A shorter interval may increase system resource usage, while a longer interval may not display real-time information.
+Conky is set to update information every 1 second. Users may modify this interval by changing the value in the `update_interval` section. A shorter interval may increase system resource usage, while a longer interval may not display real-time information.
 
-The Conky display is aligned to the top right corner of the screen. Users can modify the positioning by changing the values in the `alignment` and `gap_x`/`gap_y` sections. It includes graphical elements such as a status bars and text based information. 
+The display is aligned to the top-right corner of the screen. Users may modify the positioning by changing the values in the `alignment` and `gap_x`/`gap_y` sections. It includes graphical elements to suppliment text.
 
-The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
+This implementation displays the system name, kernel version, and uptime, a battery status bar a horizontal bar graph for each CPU core, indicating CPU usage, memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs, and the top five processes consuming memory are displayed.
 
-## Information shared
-
-Conky is set to display the system name, kernel version, and uptime, a battery status bar a horizontal bar graph for each CPU core, indicating CPU usage, memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs.
-
-Furthermore, Conky displays the top five processes consuming memory.
-
-Finally Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
+Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`, is displayed. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
 
 ## The design elements and explanations are as follows:
 
@@ -58,6 +49,8 @@ Finally Conky will display information for specific network interfaces, in my ca
 - `Source Code Pro:size=7`: Sets the font to "Source Code Pro" with a size of 7.
 
 ## Note
+The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
+
 The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
 
 ### See also
