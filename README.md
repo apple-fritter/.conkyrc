@@ -15,17 +15,13 @@ The Conky display is aligned to the top right corner of the screen. Users can mo
 
 The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
 
-Conky is set to display the system name, kernel version, and uptime.
+## Information shared
 
-Conky displays a battery status bar.
+Conky is set to display the system name, kernel version, and uptime, a battery status bar a horizontal bar graph for each CPU core, indicating CPU usage, memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs.
 
-Conky will display a horizontal bar graph for each CPU core, indicating CPU usage.
+Furthermore, Conky displays the top five processes consuming memory.
 
-Conky will display memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs. 
-
-TOP PROCESSES displays the top five processes consuming memory.
-
-Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
+Finally Conky will display information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
 
 ## The design elements and explanations are as follows:
 
@@ -63,6 +59,12 @@ Conky will display information for specific network interfaces, in my case, `wlp
 
 ## Note
 The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
+
+### See also
+#### [moonphase.py](https://github.com/apple-fritter/conky.moonphase.py): RSS reader for Conky that reads in a TSV based list of feeds. Python.
+#### [RTSP-view.py](https://github.com/apple-fritter/conky.RTSP-view.py): Script that displays an RTSP stream. Python.
+#### [tide.py](https://github.com/apple-fritter/conky.tide.py): Script that displays the local tide using the Tidal API. Python.
+#### [twitter.py](https://github.com/apple-fritter/conky.twitter.py): Script that displays a user's Twitter notifications. Python.
 
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
