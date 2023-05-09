@@ -1,7 +1,9 @@
 ## .conkyrc
 A Conky configuration file, also known as a `.conkyrc` file, is a text file that controls the appearance and behavior of the Conky system monitoring tool. It contains various settings and parameters that dictate what information should be displayed, where it should be displayed, and how it should be formatted.
 
-The .conkyrc file is highly customizable and can be edited to suit individual preferences. It supports a wide range of built-in variables and commands that allow users to display system statistics such as CPU usage, memory usage, disk usage, network traffic, and more. Additionally, users can create their own custom scripts and commands to display additional information or perform specific actions.
+The .conkyrc file is highly customizable and can be edited to suit individual preferences. It supports a wide range of built-in variables and commands that allow users to display system statistics such as CPU usage, memory usage, disk usage, network traffic, and more.
+
+In addition to the above, users can create their own custom scripts and commands to display additional information or perform specific actions.
 
 ## Example implementation
 I provided my .conkyrc file from my production machine. It contains all the pertinent information most users will find to suit their daily needs.
@@ -10,16 +12,29 @@ Conky is set to update information every 1 second. Users may modify this interva
 
 The display is aligned to the top-right corner of the screen. Users may modify the positioning by changing the values in the `alignment` and `gap_x`/`gap_y` sections. It includes graphical elements to suppliment text.
 
-This implementation displays the system name, kernel version, and uptime, a battery status bar a horizontal bar graph for each CPU core, indicating CPU usage, memory usage as a bar graph, and displays storage usage for the root and swap partitions as bar graphs, and the top five processes consuming memory are displayed.
+### This implementation displays
+- system name
+- kernel version
+- and uptime
+- battery status bar
+- CPU usage as bar graphs for each core
+- memory usage as a bar graph
+- root and swap partitions usage as bar graphs
+- the top five processes consuming memory
+- network interface information
 
-Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`, is displayed. **Users may need to modify these interface names if their system has different interface names.** It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
+#### Networking
+Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`, is displayed.
+> **Users may need to modify these interface names if their system has different interface names.**
+
+It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
 
 ## The design elements and explanations are as follows:
 
 ### Window / Display declarations
 
 #### own_window
-- `yes`: This option enables the window.
+- `own_window yes`: This option enables the window.
 - `own_window_type desktop`: Specifies that Conky should be treated as a desktop window.
 - `own_window_transparent no`: This option disables transparency.
 - `own_window_argb_visual yes`: Specifies that an ARGB visual should be used.
@@ -53,11 +68,11 @@ The font and color choices in the file may not suit everyone's preferences. User
 
 The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
 
-### See also
-#### [moonphase.py](https://github.com/apple-fritter/conky.moonphase.py): RSS reader for Conky that reads in a TSV based list of feeds. Python.
-#### [RTSP-view.py](https://github.com/apple-fritter/conky.RTSP-view.py): Script that displays an RTSP stream. Python.
-#### [tide.py](https://github.com/apple-fritter/conky.tide.py): Script that displays the local tide using the Tidal API. Python.
-#### [twitter.py](https://github.com/apple-fritter/conky.twitter.py): Script that displays a user's Twitter notifications. Python.
+## See also
+- [moonphase.py](https://github.com/apple-fritter/conky.moonphase.py): RSS reader for Conky that reads in a TSV based list of feeds. Python.
+- [RTSP-view.py](https://github.com/apple-fritter/conky.RTSP-view.py): Script that displays an RTSP stream. Python.
+- [tide.py](https://github.com/apple-fritter/conky.tide.py): Script that displays the local tide using the Tidal API. Python.
+- [twitter.py](https://github.com/apple-fritter/conky.twitter.py): Script that displays a user's Twitter notifications. Python.
 
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
