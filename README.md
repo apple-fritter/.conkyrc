@@ -68,7 +68,10 @@ The font and color choices in the file may not suit everyone's preferences. User
 
 The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
 
-## See also
+## 🤪 Conky Meta
+
+- [888v](https://github.com/apple-fritter/888v): - Virtual webcam clone with Conky overlay; Bash.
+- [.conkyrc](https://github.com/apple-fritter/.conkyrc): conky configuration file.
 - [moonphase.py](https://github.com/apple-fritter/conky.moonphase.py): RSS reader for Conky that reads in a TSV based list of feeds. Python.
 - [RTSP-view.py](https://github.com/apple-fritter/conky.RTSP-view.py): Script that displays an RTSP stream. Python.
 - [tide.py](https://github.com/apple-fritter/conky.tide.py): Script that displays the local tide using the Tidal API. Python.
