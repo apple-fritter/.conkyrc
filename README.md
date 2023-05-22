@@ -15,12 +15,12 @@ The display is aligned to the top-right corner of the screen. Users may modify t
 ### This implementation displays
 - system name
 - kernel version
-- and uptime
-- battery status bar
-- CPU usage as bar graphs for each core
-- memory usage as a bar graph
-- root and swap partitions usage as bar graphs
-- the top five processes consuming memory
+- uptime
+- battery status
+- CPU use bar graphs
+- memory usage bar graph
+- root and swap partitions usage bar graphs
+- the top five processes
 - network interface information
 
 #### Networking
