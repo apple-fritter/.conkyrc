@@ -5,7 +5,9 @@ The .conkyrc file is highly customizable and can be edited to suit individual pr
 
 In addition to the above, users can create their own custom scripts and commands to display additional information or perform specific actions.
 
-## Example implementation
+---
+
+## Included file
 I provided my .conkyrc file from my production machine. It contains all the pertinent information most users will find to suit their daily needs.
 
 Conky is set to update information every 1 second. Users may modify this interval by changing the value in the `update_interval` section. A shorter interval may increase system resource usage, while a longer interval may not display real-time information.
@@ -28,6 +30,8 @@ Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`, 
 > **Users may need to modify these interface names if their system has different interface names.**
 
 It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
+
+---
 
 ## The design elements and explanations are as follows:
 
@@ -63,10 +67,14 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 #### xftfont
 - `Source Code Pro:size=7`: Sets the font to "Source Code Pro" with a size of 7.
 
+---
+
 ## Note
 The font and color choices in the file may not suit everyone's preferences. Users can modify the font and color settings to match their taste by changing the values in the corresponding sections.
 
 The network section uses variables that are specific to the system. If these variables are not defined, the section will not appear in the Conky output, as this Conky configuration file was designed for my personal use. It may require modification to work on other systems.
+
+---
 
 ## 🤪 Conky Meta
 
@@ -77,10 +85,14 @@ The network section uses variables that are specific to the system. If these var
 - [tide.py](https://github.com/apple-fritter/conky.tide.py): Script that displays the local tide using the Tidal API. Python.
 - [twitter.py](https://github.com/apple-fritter/conky.twitter.py): Script that displays a user's Twitter notifications. Python.
 
+---
+
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
 **The authors do not endorse or support any harmful or malicious activities** that may be carried out with the software. It is the user's responsibility to ensure that their use of the software complies with all applicable laws and regulations.
+
+---
 
 ## License
 
