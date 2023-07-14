@@ -1,7 +1,6 @@
 # Window / Display declarations
 own_window yes
 own_window_type desktop
-own_window_type normal
 own_window_transparent no
 own_window_argb_visual yes
 own_window_argb_value 145
@@ -32,8 +31,6 @@ Battery ${battery_bar BAT0}
 CPU Cores ${hr 2}
 ${cpubar cpu1 4}
 ${cpubar cpu2 4}
-${cpubar cpu3 4}
-${cpubar cpu4 4}
 
 RAM ${hr 2}
 $mem / $memmax $alignr $memperc%
