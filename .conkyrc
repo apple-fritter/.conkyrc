@@ -1,7 +1,7 @@
 # Window / Display declarations
 own_window yes
 own_window_type desktop
-own_window_transparent no
+own_window_transparent yes
 own_window_argb_visual yes
 own_window_argb_value 145
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
@@ -31,6 +31,8 @@ Battery ${battery_bar BAT0}
 CPU Cores ${hr 2}
 ${cpubar cpu1 4}
 ${cpubar cpu2 4}
+${cpubar cpu3 4}
+${cpubar cpu4 4}
 
 RAM ${hr 2}
 $mem / $memmax $alignr $memperc%
@@ -51,27 +53,26 @@ ${top_mem name 5}${alignr}${top mem 5}%
 
 # The following section is machine independent
 NETWORK ${hr 2}
-
-${if_existing /sys/class/net/enp0s31f6}
-Ethernet: $alignr ${addr enp0s31f6}
-${upspeedgraph enp0s31f6 15}
-${upspeed enp0s31f6} $alignr ${totalup enp0s31f6}
-${downspeedgraph enp0s31f6 15}
-${downspeed enp0s31f6} $alignr ${totaldown enp0s31f6}
-${endif}
-
-${if_existing /sys/class/net/wlp1s0}
-WiFi: $alignr ${addr wlp1s0}
-${upspeedgraph wlp1s0 15}
-${upspeed wlp1s0} $alignr ${totalup wlp1s0}
-${downspeedgraph wlp1s0 15}
-${downspeed wlp1s0} $alignr ${totaldown wlp1s0}
+${if_existing /sys/class/net/wlan0}
+WiFi: $alignr ${addr wlan0}
+${upspeedgraph wlan0}
+${upspeed wlan0} $alignr ${totalup wlan0}
+${downspeedgraph wlan0}
+${downspeed wlan0} $alignr ${totaldown wlan0}
 ${endif}
 
 ${if_existing /sys/class/net/usb0}
 USB Tethering: $alignr ${addr usb0}
-${upspeedgraph usb0 15}
+${upspeedgraph usb0}
 ${upspeed usb0} $alignr ${totalup usb0}
-${downspeedgraph usb0 15}
+${downspeedgraph usb0}
 ${downspeed usb0} $alignr ${totaldown usb0}
+${endif}
+
+${if_existing /sys/class/net/eth0}
+Ethernet: $alignr ${addr eth0}
+${upspeedgraph eth0}
+${upspeed eth0} $alignr ${totalup eth0}
+${downspeedgraph eth0}
+${downspeed eth0} $alignr ${totaldown eth0}
 ${endif}
