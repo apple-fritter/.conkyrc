@@ -46,7 +46,7 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 #### own_window
 - `own_window yes`: This option enables the window.
 - `own_window_type desktop`: Specifies that Conky should be treated as a desktop window.
-- `own_window_transparent no`: This option disables transparency.
+- `own_window_transparent yes`: This option enables transparency.
 - `own_window_argb_visual yes`: Specifies that an ARGB visual should be used.
 - `own_window_argb_value 145`: Sets the alpha value for the window to 145.
 - `own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager`: Defines the window hints. The window should be undecorated (i.e., without borders), below other windows, sticky (i.e., always visible), and not show up in the taskbar or pager.
