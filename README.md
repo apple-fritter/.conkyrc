@@ -38,7 +38,7 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 
 ---
 
-## The design elements and explanations are as follows:
+## Elements:
 
 ### Window / Display declarations
 
