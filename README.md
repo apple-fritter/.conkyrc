@@ -26,7 +26,7 @@ The display is aligned to the top-right corner of the screen. Users may modify t
 - network interface information
 
 #### Networking
-Information for specific network interfaces, in my case, `wlp2s0` and `enp4s0`, is displayed.
+Information for specific network interfaces, in my case, `wlan0` is displayed.
 > **Users may need to modify these interface names if their system has different interface names.**
 
 It displays network activity for Ethernet, WiFi, and USB tethering, **if available**. It includes the upload and download speeds and total upload and download data transfer. The `if_existing` statements check for the existence of the network interfaces before displaying their status.
