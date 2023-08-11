@@ -34,9 +34,10 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 ---
 
 ## Screenshot
-![Screenshot_2023-07-19_19-22-54](https://github.com/apple-fritter/.conkyrc/assets/125221355/51c09c91-29bc-4ba2-9ff2-8d1a6ed69365)
+
 
 ---
+![Screenshot](https://github.com/apple-fritter/.conkyrc/assets/125221355/9e9e097f-0153-4a66-a73f-484723d0a8b9)
 
 ## Elements:
 
@@ -61,8 +62,8 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 - `top_right`: Aligns the window to the top right corner of the desktop.
 
 #### gap_x, gap_y
-- `gap_x 12`: Sets the horizontal gap between the window and the right edge of the screen to 12 pixels.
-- `gap_y 40`: Sets the vertical gap between the window and the top edge of the screen to 40 pixels.
+- `gap_x 4`: Sets the horizontal gap between the window and the right edge of the screen to 4 pixels.
+- `gap_y 4`: Sets the vertical gap between the window and the top edge of the screen to 4 pixels.
 
 ### Text / decoration
 
@@ -71,7 +72,8 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 
 #### xftfont
 - `Source Code Pro:size=7`: Sets the font to "Source Code Pro" with a size of 7.
-
+#### color
+- `color1 2ec27e`: Makes for a zesty zombie green!
 ---
 
 ## Note
