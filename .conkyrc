@@ -15,11 +15,10 @@ alignment top_right
 
 gap_x 4
 gap_y 4
+color1 FFFFFF
 # Text / decoration
 use_xft yes
 xftfont Source Code Pro:size=7
-# Zombie green
-color1 2ec27e
 
 # The actual output
 TEXT
