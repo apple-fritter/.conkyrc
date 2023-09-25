@@ -34,10 +34,8 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 ---
 
 ## Screenshot
-![20230825233451](https://github.com/apple-fritter/.conkyrc/assets/125221355/fd0e15ad-8394-4fba-8529-6f6263294b8f)
 
----
-
+![Screenshot_2023-09-25_15-08-36](https://github.com/apple-fritter/.conkyrc/assets/125221355/a8c371b7-e282-45cc-a463-af93dd5ce2e5)
 
 ## Elements:
 
