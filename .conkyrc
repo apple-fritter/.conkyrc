@@ -13,18 +13,20 @@ maximum_width 400
 
 alignment top_right
 
-gap_x 4
-gap_y 4
-color1 FFFFFF
+gap_x 12
+gap_y 12
 # Text / decoration
 use_xft yes
-xftfont Source Code Pro:size=7
+color1 FFFFFF
+xftfont Source Code Pro:size=8
 
 # The actual output
 TEXT
+$alignr${time %H:%M}
+$alignr${time %A, %d %B, %Y}
 ${color1}SYSTEM ${hr 2}
 $sysname $kernel $alignr $machine
-Uptime: $alignr $uptime
+Up $alignr $uptime
 Battery ${battery_bar BAT0} 
 
 # This section may contain variables incompatible with other systems.
@@ -51,26 +53,20 @@ ${top_mem name 3}${alignr}${top mem 3}%
 ${top_mem name 4}${alignr}${top mem 4}%
 ${top_mem name 5}${alignr}${top mem 5}%
 
-# The following section is machine independent
+# The following section is machine dependent
 NETWORK ${hr 2}
-${if_existing /sys/class/net/wlan0}
-WiFi: $alignr ${addr wlan0}
+${if_existing /sys/class/net/wlan0}WiFi: $alignr ${addr wlan0}
 ${upspeedgraph wlan0}
 ${upspeed wlan0} $alignr ${totalup wlan0}
 ${downspeedgraph wlan0}
-${downspeed wlan0} $alignr ${totaldown wlan0}
-${endif}
-${if_existing /sys/class/net/eth0}
-Ethernet: $alignr ${addr eth0}
+${downspeed wlan0} $alignr ${totaldown wlan0}${endif}
+${if_existing /sys/class/net/eth0}Ethernet: $alignr ${addr eth0}
 ${upspeedgraph eth0}
 ${upspeed eth0} $alignr ${totalup eth0}
 ${downspeedgraph eth0}
-${downspeed eth0} $alignr ${totaldown eth0}
-${endif}
-${if_existing /sys/class/net/usb0}
-USB Tethering: $alignr ${addr usb0}
+${downspeed eth0} $alignr ${totaldown eth0}${endif}
+${if_existing /sys/class/net/usb0}USB Tethering: $alignr ${addr usb0}
 ${upspeedgraph usb0}
 ${upspeed usb0} $alignr ${totalup usb0}
 ${downspeedgraph usb0}
-${downspeed usb0} $alignr ${totaldown usb0}
-${endif}
+${downspeed usb0} $alignr ${totaldown usb0}${endif}
