@@ -59,7 +59,7 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 - `top_right`: Aligns the window to the top right corner of the desktop.
 
 #### gap_x, gap_y
-- `gap_x 12`: Sets the horizontal gap between the window and the right edge of the screen to 12 pixels.
+- `gap_x 52`: Sets the horizontal gap between the window and the right edge of the screen to 12 pixels.
 - `gap_y 12`: Sets the vertical gap between the window and the top edge of the screen to 12 pixels.
 
 ### Text / decoration
@@ -68,7 +68,7 @@ It displays network activity for Ethernet, WiFi, and USB tethering, **if availab
 - `yes`: Enables XFT (X FreeType) font rendering. This allows the use of anti-aliased fonts.
 
 #### xftfont
-- `Source Code Pro:size=8`: Sets the font to "Source Code Pro" with a size of 8.
+- `Source Code Pro:size=7.5`: Sets the font to "Source Code Pro" with a size of 7.5.
 #### color
 - `color1 FFFFFF`: WHITE, represented as a hex value.
 ---
