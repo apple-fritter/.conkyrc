@@ -13,48 +13,53 @@ maximum_width 400
 
 alignment top_right
 
-gap_x 12
+gap_x 52
 gap_y 12
+
 # Text / decoration
 use_xft yes
 color1 FFFFFF
-xftfont Source Code Pro:size=8
+xftfont Source Code Pro:size=7.5
 
 # The actual output
 TEXT
-$alignr${time %H:%M}
-$alignr${time %A, %d %B, %Y}
+${time %H:%M}$alignr${time %A, %d %B, %Y}
 ${color1}SYSTEM ${hr 2}
 $sysname $kernel $alignr $machine
 Up $alignr $uptime
-Battery ${battery_bar BAT0} 
+Battery ${battery_bar BAT0}
 
-# This section may contain variables incompatible with other systems.
-CPU Cores ${hr 2}
-${cpubar cpu1 4}
-${cpubar cpu2 4}
-${cpubar cpu3 4}
-${cpubar cpu4 4}
-
-RAM ${hr 2}
-$mem / $memmax $alignr $memperc%
-$membar
-
-STORAGE ${hr 2}
+# Storage information
+STORAGE ${hr 1}
 ROOT $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar /}
 SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
 ${swapbar}
 
-TOP PROCESSES ${hr 2}
-${top_mem name 1}${alignr}${top mem 1}%
-${top_mem name 2}${alignr}${top mem 2}%
-${top_mem name 3}${alignr}${top mem 3}%
-${top_mem name 4}${alignr}${top mem 4}%
-${top_mem name 5}${alignr}${top mem 5}%
+# CPU information
+CPU Usage:${hr 1}
+${cpubar cpu1 5}
+${cpubar cpu2 5}
+${cpubar cpu3 5}
+${cpubar cpu4 5}
+${top name 1}${alignr}${top cpu 1}%
+${top name 2}${alignr}${top cpu 2}%
+${top name 3}${alignr}${top cpu 3}%
+${top name 4}${alignr}${top cpu 4}%
+${top name 5}${alignr}${top cpu 5}%
 
-# The following section is machine dependent
-NETWORK ${hr 2}
+# RAM information
+RAM Usage:${hr 1}
+$mem / $memmax $alignr $memperc%
+$membar
+${top_mem name 1}${alignr}${top_mem mem 1}
+${top_mem name 2}${alignr}${top_mem mem 2}
+${top_mem name 3}${alignr}${top_mem mem 3}
+${top_mem name 4}${alignr}${top_mem mem 4}
+${top_mem name 5}${alignr}${top_mem mem 5}
+
+# Network information
+NETWORK ${hr 1}
 ${if_existing /sys/class/net/wlan0}WiFi: $alignr ${addr wlan0}
 ${upspeedgraph wlan0}
 ${upspeed wlan0} $alignr ${totalup wlan0}
